@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project 7 – If/Else, Time, Debugging</title>
+  <!-- Link to your JS -->
+  <script src="JS/main.js" defer></script>
+</head>
+<body>
+  <h2>If/Else, Time check, and Debugging</h2>
+
+  <!-- a) A <p> with an id and an onclick handler  -->
+  <p id="Clickable" onclick="showClickMessage()">Click me to toggle a message.</p>
+  <p id="Click_Output"></p>
+
+  <hr />
+
+  <!-- b) Time function UI -->
+  <p><strong>Time check:</strong> Click the button to see a greeting based on the current hour.</p>
+  <button onclick="Time_function()">What time is it?</button>
+  <p id="Time_of_day"></p>
+
+  <hr />
+
+  <!-- c) Instructions + input + output area  if/else function -->
+  <p>Enter your age and click “Check Age” to see if you are an adult.</p>
+  <input id="ageInput" type="number" placeholder="Enter age" />
+  <button onclick="checkAge()">Check Age</button>
+  <p id="ageResult"></p>
+</body>
+</html>
