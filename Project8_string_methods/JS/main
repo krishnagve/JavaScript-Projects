@@ -1,0 +1,84 @@
+// Project 8 - String & Number Methods
+// Each function is triggered by a button and writes to a <p> via getElementById.
+
+// -------------------------------------------------------------
+// concat() — join pieces into one sentence
+// -------------------------------------------------------------
+function full_Sentence() {
+  // Parts to concatenate
+  var part_1 = "JavaScript string methods ";
+  var part_2 = "are powerful and ";
+  var part_3 = "fun to learn!";
+  // Join them with concat()
+  var whole_sentence = part_1.concat(part_2, part_3);
+  // Display result
+  document.getElementById("Concatenate").innerHTML = whole_sentence;
+}
+
+// -------------------------------------------------------------
+// slice() — extract a section of a string (end index not included)
+// -------------------------------------------------------------
+function slice_Method() {
+  var sentence = "All work and no play makes Johnny a dull boy.";
+  // Extract "Johnny" (indexes 27..33)
+  var section = sentence.slice(27, 33);
+  document.getElementById("Slice").innerHTML = section;
+}
+
+// -------------------------------------------------------------
+// toUpperCase() — convert to uppercase
+// -------------------------------------------------------------
+function upperCase_Method() {
+  var text = "Make me loud, please.";
+  var loud = text.toUpperCase();
+  document.getElementById("Uppercase").innerHTML = loud;
+}
+
+// -------------------------------------------------------------
+// search() — find first match index (or -1 if not found)
+// -------------------------------------------------------------
+function search_Method() {
+  var haystack = "The quick brown fox jumps over the lazy dog.";
+  var pos = haystack.search("fox"); // expected 16
+  document.getElementById("Search").innerHTML = "Position: " + pos;
+}
+
+// -------------------------------------------------------------
+// toString() — convert a number to a string
+// -------------------------------------------------------------
+function string_Method() {
+  var x = 182;             // number
+  var asText = x.toString(); // "182"
+  document.getElementById("ToString").innerHTML =
+    asText + " (type: " + typeof asText + ")";
+}
+
+// -------------------------------------------------------------
+// toPrecision() — format number to N significant digits (returns string)
+// -------------------------------------------------------------
+function precision_Method() {
+  var n = 12938.3012987376112;
+  var precise = n.toPrecision(10); // total digits = 10
+  document.getElementById("Precision").innerHTML =
+    precise + " (type: " + typeof precise + ")";
+}
+
+// -------------------------------------------------------------
+// toFixed() — format number with fixed decimals (returns string)
+// -------------------------------------------------------------
+function fixed_Method() {
+  var pi = 3.1415926535;
+  var fixed = pi.toFixed(3); // keep 3 decimal places → "3.142"
+  document.getElementById("Fixed").innerHTML =
+    fixed + " (type: " + typeof fixed + ")";
+}
+
+// -------------------------------------------------------------
+// valueOf() — get primitive value from a Number object
+// -------------------------------------------------------------
+function valueOf_Method() {
+  var numObj = new Number(100);   // Number object (not primitive)
+  var primitive = numObj.valueOf(); // 100 (number primitive)
+  document.getElementById("ValueOf").innerHTML =
+    primitive + " (type: " + typeof primitive + ")";
+}
