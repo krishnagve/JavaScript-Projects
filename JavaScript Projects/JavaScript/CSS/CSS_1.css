@@ -1,0 +1,76 @@
+/* CSS_1.css */
+/* Styles for the contact form */
+
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 40px;
+  color: #333;
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Contact form container */
+form {
+  background-color: #ffffff;
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Allow message box resizing vertically only */
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* Button hover effect */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Add subtle animation on hover */
+input[type="submit"]:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+}

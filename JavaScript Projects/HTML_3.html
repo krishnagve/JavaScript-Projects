@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Attribute Example</title>
+  <!-- Corrected path -->
+  <script src="JavaScript/JavaScript_3.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    .tour {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #dataOutput {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <h1>Travel Packages (Data Attribute Demo)</h1>
+  <p>Click a tour to see its details (using data-* attributes).</p>
+
+  <div class="tour" data-location="Paris" data-price="1299" data-duration="5 days">
+    Paris Getaway
+  </div>
+
+  <div class="tour" data-location="Tokyo" data-price="1599" data-duration="7 days">
+    Tokyo Explorer
+  </div>
+
+  <div class="tour" data-location="New York" data-price="999" data-duration="3 days">
+    New York City Highlights
+  </div>
+
+  <p id="dataOutput">Select a tour above to view details.</p>
+</body>
+</html>

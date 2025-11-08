@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement Example</title>
+    <!-- Link to external JavaScript file -->
+    <script src="JavaScript/JavaScript_1.js" defer></script>
+</head>
+<body>
+    <h1>JavaScript Switch Statement Example</h1>
+    <p>Select your favorite fruit:</p>
+
+    <!-- Dropdown for user input -->
+    <select id="fruitSelect" class="fruitInfo">
+        <option value="">--Choose an option--</option>
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="mango">Mango</option>
+        <option value="orange">Orange</option>
+        <option value="grape">Grape</option>
+    </select>
+
+    <!-- Button to call the function -->
+    <button onclick="showFruitMessage()">Show Message</button>
+
+    <!-- Display result here -->
+    <p id="output" class="fruitInfo"></p>
+
+    <!-- Class elements to demonstrate getElementsByClassName -->
+    <p class="fruitInfo">Fruits are delicious and healthy!</p>
+    <p class="fruitInfo">Eat at least one fruit every day!</p>
+
+    <!-- ------------------------------------------ -->
+    <!-- CANVAS ELEMENT ADDED -->
+    <!-- ------------------------------------------ -->
+    <h2>Canvas Example</h2>
+    <canvas id="myCanvas" width="300" height="200"
+        style="border: 2px solid black;">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+</body>
+</html>

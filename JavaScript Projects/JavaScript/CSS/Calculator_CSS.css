@@ -1,0 +1,79 @@
+html {
+  font-size: 70%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Calculator main container */
+.calculator {
+  border: 1.2px solid darkslategray;
+  border-radius: 7px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+/* Display section */
+.display {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  padding: 15px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+/* Layout for buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+  padding: 10px;
+}
+
+/* General button styling */
+button {
+  height: 45px;
+  font-size: 1.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #f0f0f0, #ccc);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #ddd, #aaa);
+}
+
+/* Operator buttons */
+.operator {
+  background: linear-gradient(to bottom, #ccc, #999);
+  font-weight: bold;
+}
+
+/* Equal button (blue and tall) */
+.equal {
+  background: blue;
+  color: white;
+  grid-row: span 4;
+  height: auto;
+}
+
+/* AC button (red) */
+.clear {
+  background: red;
+  color: white;
+  font-weight: bold;
+}
