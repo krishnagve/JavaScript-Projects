@@ -1,0 +1,106 @@
+/* =========================
+   General Page Styling
+   ========================= */
+body {
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a); /* sleek dark gradient */
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* Overlay box for readability */
+#menuBG {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 900px;
+    margin: 60px auto;
+    padding: 30px 40px 40px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 204, 0, 0.2);
+}
+
+/* =========================
+   Headings
+   ========================= */
+h1 {
+    font-family: "Brush Script MT", cursive;
+    color: #ffcc00;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+h3 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #ffffff;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   Text Styling
+   ========================= */
+div {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+#btnOrder {
+    display: block;
+    margin: 0 auto 40px auto;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#btnOrder:hover {
+    background-color: #ffa500;
+    transform: scale(1.05);
+}
+
+/* =========================
+   Menu Layout
+   ========================= */
+.menuColumn {
+    width: 280px;
+    min-height: 160px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left, .middle, .right {
+    text-align: left;
+}
+
+/* =========================
+   Receipt Section
+   ========================= */
+#showText {
+    width: 450px;
+    margin-top: 80px;
+    float: left;
+}
+
+#totalPrice {
+    width: 200px;
+    margin-top: 80px;
+    float: right;
+    text-align: left;
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.clear {
+    clear: both;
+}
