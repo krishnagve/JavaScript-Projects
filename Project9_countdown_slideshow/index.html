@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown & Slideshow</title>
+    <link rel="stylesheet" href="CSS/main">
+</head>
+<body>
+
+    <h1>JavaScript Countdown & Slideshow</h1>
+
+    <!-- COUNTDOWN SECTION -->
+    <section id="countdown-section">
+        <h2>Countdown Timer</h2>
+        <p>Click the button below to start a 10-second countdown.</p>
+        <!-- Calls countdown() defined in JS/main.js -->
+        <button onclick="countdown()">Start Countdown</button>
+        <p id="timer"></p>
+    </section>
+
+    <!-- SLIDESHOW SECTION -->
+    <section id="slideshow-section">
+        <h2>Car Slideshow</h2>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Slide 1 -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="car1.jpg" alt="Car 1">
+                <div class="text">Classic Red Car</div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="car2.jpg" alt="Car 2">
+                <div class="text">Sports Blue Car</div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="car3.jpg" alt="Car 3">
+                <div class="text">Luxury Black Car</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <!-- Uses plusSlides() defined in JS/main.js -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- The dots/circles -->
+        <div class="dots-container">
+            <!-- Uses currentSlide() defined in JS/main.js -->
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Link to external JavaScript file -->
+    <script src="JS/main"></script>
+</body>
+</html>

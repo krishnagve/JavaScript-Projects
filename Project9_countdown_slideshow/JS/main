@@ -1,0 +1,88 @@
+// ---------------------
+// COUNTDOWN FUNCTION
+// ---------------------
+
+// This function starts a countdown from 10 to 0
+// and displays the values inside the <p> element with id="timer".
+function countdown() {
+    // Start value for the countdown
+    let seconds = 10;
+
+    // Get a reference to the timer display element
+    const timerDisplay = document.getElementById("timer");
+
+    // Clear any previous text
+    timerDisplay.textContent = "";
+
+    // setInterval runs the inner function every 1000ms (1 second)
+    const countdownInterval = setInterval(function () {
+
+        // While seconds is 10,9,8,...,0 show the number
+        if (seconds >= 0) {
+            timerDisplay.textContent = seconds;
+            seconds--; // decrease by 1 each second
+        }
+        // When seconds goes below 0, stop the interval and show final message
+        else {
+            timerDisplay.textContent = "Time's up!";
+            clearInterval(countdownInterval);
+        }
+
+    }, 1000);
+}
+
+// ---------------------
+// SLIDESHOW FUNCTIONS
+// ---------------------
+
+// slideIndex keeps track of which slide is currently visible.
+// We start at 1 because it reads nicely with "1 / 3" labels.
+let slideIndex = 1;
+
+// Call showSlides once when the page loads to show the first slide.
+showSlides(slideIndex);
+
+// plusSlides(n) changes the slide by adding n
+// n = 1 for next, n = -1 for previous.
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// currentSlide(n) jumps directly to slide number n.
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+// showSlides(n) displays the correct slide and updates the dots.
+function showSlides(n) {
+    let i;
+    // Get all slide elements (each has class "mySlides")
+    const slides = document.getElementsByClassName("mySlides");
+    // Get all dot elements (each has class "dot")
+    const dots = document.getElementsByClassName("dot");
+
+    // If n is greater than number of slides, wrap back to first slide
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+
+    // If n is less than 1, wrap to last slide
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    // Hide all slides
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    // Remove "active" class from all dots
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    // Display the current slide
+    slides[slideIndex - 1].style.display = "block";
+    // Highlight the corresponding dot
+    dots[slideIndex - 1].className += " active";
+}
