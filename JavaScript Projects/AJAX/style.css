@@ -1,0 +1,46 @@
+/* 
+   General page styling
+   This styles the whole document in ajax_basic.html
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Main heading at the top of the page */
+h1 {
+    margin-top: 40px;
+    color: #333;
+}
+
+/* Style for the button that triggers the AJAX call */
+button#loadContentBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: #007acc;
+    color: #ffffff;
+}
+
+/* Change the appearance of the button when hovered */
+button#loadContentBtn:hover {
+    background-color: #005f99;
+}
+
+/* Container that will hold the AJAX-loaded content */
+#ajax-content {
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
