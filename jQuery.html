@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic jQuery</title>
+
+    <!-- 
+        Load the jQuery library from the Google CDN.
+        We need this so we can use the $ (jQuery) functions
+        in the script below.
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- 
+        The body is initially empty. All of the visible content
+        (heading and paragraphs) will be created and added
+        with jQuery when the page has finished loading.
+    -->
+
+    <script>
+        // Run this function only after the DOM is fully loaded
+        $(document).ready(function () {
+
+            /* 
+               1) Dynamically add HTML to the page.
+               We append a container div, an inner div,
+               a heading, and three paragraphs to <body>.
+            */
+            $("body").append(
+                "<div id='container'>" +
+                    "<div id='inner'>" +
+                        "<h1>Basic jQuery</h1>" +
+                        "<p id='1'>Paragraph 1</p>" +
+                        "<p id='2'>Paragraph 2</p>" +
+                        "<p id='3'>Paragraph 3</p>" +
+                    "</div>" +
+                "</div>"
+            );
+
+            /* 
+               2) Use jQuery .css() to style an element.
+               Here we select the paragraph with id="2"
+               and change its text color to red.
+            */
+            $("#2").css({ "color": "red" });
+
+            /* 
+               3) Add an event using jQuery .click().
+               W
